@@ -1,4 +1,4 @@
-## Football Tournament Project
+# Football Tournament Project
 
 ## Table of Contents
 1. Motivation
