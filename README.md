@@ -1,6 +1,6 @@
-# Football Tournament Project
+## Football Tournament Project
 
-## Table of Contents
+### Table of Contents
 1. Motivation
 2. Function Description
 3. Datasource
@@ -34,11 +34,11 @@ Then the function displays the faces of the best 5 players (rows) with their cor
 and lineup for a specified team plus its resulting overall rating. This is done by maximizing the players rating for each position in a formation
 6. player_info(dataframe, player_name): returns a table with player facts and her face
 
-#### Structure:
+### Structure:
 All functions are in the single py file 'SP_project' and they are called in the ipynp file 'visualization'.
 The visualization (e.g. plot or images) of the functions output is done in the function itself. 
 
-##### How to set up:
+### How to set up:
 To set up, you need to run the following:
 
 import pandas as pd
@@ -50,7 +50,7 @@ clean_data_to_purpose(players)
 
 afterwards, all functions should be callable.
  
-###### How to use the functions: 
+### How to use the functions: 
 Specification of valid arguments: 
 - player_type_dis(dataframe, specification): 
         - The first argument is the name of the whole dataframe
