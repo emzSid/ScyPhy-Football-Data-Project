@@ -32,6 +32,7 @@ Then the function displays the faces of the best 5 players (rows) with their cor
 
 5. get_best_formation(dataframe, team, criteria): returns the best football formation  
 and lineup for a specified team plus its resulting overall rating. This is done by maximizing the players rating for each position in a formation
+
 6. player_info(dataframe, player_name): returns a table with player facts and her face
 
 ### Structure:
@@ -68,3 +69,6 @@ Specification of valid arguments:
         - To get the best lineup of the whole dataframe write 'all' (string) as the second argument
         - For the best lineup of a specific team write the corresponding nationality_name as string as second argument
         - the third argument can be the name of any column with integers
+- player_info(dataframe, player_name): 
+        - The first argument is the name of the whole dataframe 
+        - The second argument is an entry of the column 'short_name'
