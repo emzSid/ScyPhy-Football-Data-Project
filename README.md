@@ -10,13 +10,13 @@
 
 
 ### Motivation:
-Since in July 2022 the uefa womens euro (football tournament) starts, 
+Since the uefa womens euro (football tournament) starts in July 2022, 
 I was motivated to work with corresponding Fifa football player data. 
 Regarding the functions, I tried to think about things a fan or coach would like to know before the tournament starts. In the end I came up with the functions specified below.
 
 ### Datasource 
 As data source, I use the csv file called female_players_22.csv from the fifa 2022 dataset from Kaggle (https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset?select=female_players_22.csv).
-To run the code it is neccessery to download the csv file from Kaddle
+To run the code it is neccessery to download the csv file from Kaggle
 
 ### Function Description: 
 1. player_type_dis(dataframe, specification): restructures the dataframe and
@@ -42,12 +42,12 @@ The visualization (e.g. plot or images) of the functions output is done in the f
 ### How to set up:
 To set up, you need to run the following:
 
-import pandas as pd
-from SP_project import *
+import pandas as pd <br>
+from SP_project import * <br>
 
-players = pd.read_csv('female_players_22.csv')
-add_rankingtype(players)
-clean_data_to_purpose(players)
+players = pd.read_csv('female_players_22.csv') <br>
+add_rankingtype(players) <br>
+clean_data_to_purpose(players) <br>
 
 afterwards, all functions should be callable.
  
