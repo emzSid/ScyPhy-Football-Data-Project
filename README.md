@@ -15,25 +15,71 @@ I was motivated to work with corresponding Fifa football player data.
 Regarding the functions, I tried to think about things a fan or coach would like to know before the tournament starts. In the end I came up with the functions specified below.
 
 ### Datasource 
-As data source, I use the csv file called female_players_22.csv from the fifa 2022 dataset from Kaggle (https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset?select=female_players_22.csv).
-To run the code it is neccessery to download the csv file from Kaggle
+As data source, I use the csv file called female_players_22.csv from the Fifa 2022 dataset from Kaggle (https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset?select=female_players_22.csv).
+To run the code it is neccessery to download the csv file from Kaggle.
 
 ### Function Description: 
-1. player_type_dis(dataframe, specification): restructures the dataframe and
- makes a stacked barplot displaying how many world class/good or moderate players are in the specified national teams
-
-2. get_top5(nationalityName, criteria): sorts ths specified nationalteam by the criteria 
-so that in the first row there is the player with the best rating of this criteria. 
-Then the function displays the faces of the best 5 players (rows) with their corresponding names
-
-3. youngsters_to_watch_out(dataframe): extracts young players with a high potential rating and then side by side, displays their faces with the corresponding name 
-
-4. physic_overall_corr(dataframe): plots the correlation of the overall rating with the passing, ball control and physic rating compared for defenders and offensive players
-
-5. get_best_formation(dataframe, team, criteria): returns the best football formation  
-and lineup for a specified team plus its resulting overall rating. This is done by maximizing the players rating for each position in a formation
-
-6. player_info(dataframe, player_name): returns a table with player facts and her face
+1. player_type_dis(dataframe, specification): <br>
+- clean_data_to_purpose(data): <br>
+     Deletes unneccesary columns and only keeps the european players <br>
+     Args: <br>
+      data: dataframe female_players_22.csv from Kaggle<br>
+     Results: 
+      changed dataframe as specified above<br>
+- add_rankingtype(data): <br>
+     Defines categories for moderate, good and world class players and assigns each player one of these categories in a new colum<br>
+     Args: <br>
+      data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
+     Results: 
+      dataframe with additional column <br>
+- player_info(data, player_name): <br>
+     Extracts some facts of a player, and shows them in a table together with the face of the player
+     Args: 
+      data: cleaned dataframe (female_players_22.csv from Kaggle)
+      player_name: entry of the column 'short_name' from the dataframe (String)
+     Results: 
+        Subplot with the players face on the left and a table with player facts on the right
+ - youngsters_to_watch_out(dataframe): 
+      Extracts young players with a high potential rate and displays their faces and name side by side
+      Args: 
+        data: cleaned dataframe (female_players_22.csv from Kaggle)
+      Results: 
+        Subplot with four images per row (two rows) displaying the players face 
+ - extract_one_team(data ,team): 
+      Extracts the squad for one team
+      Args: 
+        data: cleaned dataframe (female_players_22.csv from Kaggle)
+        team: entry of the column 'nationality_name' (String)
+      Results: 
+        Dataframe which is reduced to only players of one nation
+- get_top5(data, team, criteria): 
+      Sorts the team by a criteria and displays the faces of the best 5 players of it
+      Args: 
+        data: cleaned dataframe (female_players_22.csv from Kaggle)
+        team: entry of the column 'nationality_name' (String)
+        criteria: any column name of the datframe with integers (String)
+      Results: 
+        Subplot with five images side by side displaying the players face 
+- get_best_formation(data, specification):
+      Maximizes the sum of the players overall rating for each possible formation and keeps the corresponding selected players as lineup 
+      Args: 
+          data: cleaned dataframe (female_players_22.csv from Kaggle)
+          specification: entry of the column 'nationality_name' (String)
+      Results: 
+          A table with the 11 selected players and a print statement which reveals the best formation for this team and its overall rating then
+ - physic_overall_corr(data): 
+      Plots the correlation of overall with passing, ball control and physic rating compared for defenders and offensive players
+      Args: 
+          data: cleaned dataframe (female_players_22.csv from Kaggle)
+      Results: 
+        Three seaborn pairplots side by side
+- player_type_dis(data, specification):
+      Displays a stacked barplot of the counts of each ranking type in the specified national teams
+      Args: 
+          data: cleaned dataframe (female_players_22.csv from Kaggle)
+          specification: entry of the column 'nationality_name'
+      Results: 
+        Stacked barplot
 
 ### Structure:
 All functions are in the single py file 'SP_project' and they are called in the ipynp file 'visualization'.
@@ -51,24 +97,9 @@ clean_data_to_purpose(players) <br>
 
 afterwards, all functions should be callable.
  
-### How to use the functions: 
-Specification of valid arguments: 
+### Specification of valid arguments for specific functions: 
 - player_type_dis(dataframe, specification): 
-        - The first argument is the name of the whole dataframe
         - To get the stacked barplot for all european countries write 'none' (string) as the second argument
-        - For only three nations write an array with three entries,
-          namely three nations from the nationality_name column as second argument
+        - For only three nations write an array with three entries, namely three nations from the nationality_name column as second argument
 - get_top5(nationalityName, criteria): 
-        - The first argument is either an entry of the column "nationality_name"
-          or if you insert 'all' the whole datatframe is taken
-        - The second argument can be the name of any column which contains exclusively integers
-- youngsters_to_watch_out(dataframe): the argument is the name of the whole dataframe
-- physic_overall_corr(dataframe): the argument is the name of the whole dataframe
-- get_best_formation(dataframe, team, criteria): 
-        - The first argument is the name of the whole dataframe
-        - To get the best lineup of the whole dataframe write 'all' (string) as the second argument
-        - For the best lineup of a specific team write the corresponding nationality_name as string as second argument
-        - the third argument can be the name of any column with integers
-- player_info(dataframe, player_name): 
-        - The first argument is the name of the whole dataframe 
-        - The second argument is an entry of the column 'short_name'
+        - The first argument is either an entry of the column "nationality_name or if you insert 'all' the whole datatframe is taken
