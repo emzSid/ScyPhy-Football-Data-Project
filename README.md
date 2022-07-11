@@ -65,8 +65,8 @@ The visualization (e.g. plot or images) of the functions output is done in the f
         Dataframe which is reduced to only players of one nation<br>
 
 - **get_top5(data, team, criteria):** <br>
-      Sorts the team by a criteria and displays the faces of the best 5 players of it<br>
-      
+      Sorts the team by a criteria and displays the faces of the best 5 players of it <br>
+
       Args: <br>
         data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
         team: entry of the column 'nationality_name' (String)<br>
@@ -92,12 +92,12 @@ The visualization (e.g. plot or images) of the functions output is done in the f
         Three seaborn pairplots side by side<br>
 
 - **player_type_dis(data, specification):** <br>
-      Displays a stacked barplot of the counts of each ranking type in the specified national teams<br>
-      
-      Args: <br>
+    Displays a stacked barplot of the counts of each ranking type in the specified national teams<br>
+
+    Args: <br>
         data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
         specification: entry of the column 'nationality_name'<br>
-      Results: <br>
+    Results: <br>
         Stacked barplot
 
 ### How to set up:
