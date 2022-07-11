@@ -65,8 +65,8 @@ The visualization (e.g. plot or images) of the functions output is done in the f
         Dataframe which is reduced to only players of one nation<br>
 
 - **get_top5(data, team, criteria):** <br>
-      Sorts the team by a criteria and displays the faces of the best 5 players of it <br>
-
+      Sorts the team by a criteria and displays the faces of the best 5 players of it<br>
+      
       Args: <br>
         data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
         team: entry of the column 'nationality_name' (String)<br>
@@ -116,5 +116,5 @@ afterwards, all functions should be callable.
 - player_type_dis(dataframe, specification): <br>
         - To get the stacked barplot for all european countries write 'none' (string) as the second argument<br>
         - For only three nations write an array with three entries, namely three nations from the nationality_name column as second argument<br>
-- get_top5(nationalityName, criteria): <br>
+- get_top5(nationality_name, criteria): <br>
         - The first argument is either an entry of the column "nationality_name or if you insert 'all' the whole datatframe is taken
