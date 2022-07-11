@@ -66,7 +66,7 @@ The visualization (e.g. plot or images) of the functions output is done in the f
 
 - **get_top5(data, team, criteria):** <br>
       Sorts the team by a criteria and displays the faces of the best 5 players of it<br>
-
+      
       Args: <br>
         data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
         team: entry of the column 'nationality_name' (String)<br>
@@ -78,27 +78,27 @@ The visualization (e.g. plot or images) of the functions output is done in the f
      Maximizes the sum of the players overall rating for each possible formation and keeps the corresponding selected players as lineup <br>
 
      Args: <br>
-      data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
-      specification: entry of the column 'nationality_name' (String)<br>
+       data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
+       specification: entry of the column 'nationality_name' (String)<br>
      Results: <br>
-      A table with the 11 selected players and a print statement which reveals the best formation for this team and its overall rating then<br>
+       A table with the 11 selected players and a print statement which reveals the best formation for this team and its overall rating then<br>
 
  - **physic_overall_corr(data):** <br>
       Plots the correlation of overall with passing, ball control and physic rating compared for defenders and offensive players<br>
 
       Args: <br>
-          data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
+        data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
       Results: <br>
         Three seaborn pairplots side by side<br>
 
 - **player_type_dis(data, specification):** <br>
       Displays a stacked barplot of the counts of each ranking type in the specified national teams<br>
-
+      
       Args: <br>
-          data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
-          specification: entry of the column 'nationality_name'<br>
+        data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
+        specification: entry of the column 'nationality_name'<br>
       Results: <br>
-        Stacked barplot<br>
+        Stacked barplot
 
 ### How to set up:
 To set up, you need to run the following:<br>
