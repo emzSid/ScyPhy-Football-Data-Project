@@ -91,7 +91,7 @@ The visualization (e.g. plot or images) of the functions output is done in the f
       Results: <br>
         Three seaborn pairplots side by side<br>
 
--**player_type_dis(data, specification):**<br>
+- **player_type_dis(data, specification):** <br>
       Displays a stacked barplot of the counts of each ranking type in the specified national teams<br>
 
       Args: <br>
