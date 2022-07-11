@@ -72,7 +72,7 @@ The visualization (e.g. plot or images) of the functions output is done in the f
         team: entry of the column 'nationality_name' (String)<br>
         criteria: any column name of the datframe with integers (String)<br>
       Results: <br>
-        Subplot with five images side by side displaying the players face <br>
+        Subplot with five images side by side displaying the players face 
         
 - **get_best_formation(data, specification):**<br>
      Maximizes the sum of the players overall rating for each possible formation and keeps the corresponding selected players as lineup <br>
