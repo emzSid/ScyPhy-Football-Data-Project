@@ -14,7 +14,7 @@ Since the uefa womens euro (football tournament) starts in July 2022, I was moti
 Regarding the functions, I tried to think about things a fan or coach would like to know before the tournament starts. In the end I came up with the functions specified below.
 
 ### Datasource 
-As data source, I use the csv file called female_players_22.csv from the Fifa 2022 dataset from [Kaggle][https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset?select=female_players_22.csv]. <br>
+As data source, I use the csv file called female_players_22.csv from the Fifa 2022 dataset from [Kaggle](https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset?select=female_players_22.csv). <br>
 To run the code it is neccessery to download the csv file from Kaggle.
 
 ### Structure:
