@@ -6,7 +6,7 @@
 3. Datasource
 3. Structure
 4. How to set up
-5. How to use the functions
+5. Specification of valid arguments
 
 
 ### Motivation:
@@ -18,7 +18,6 @@ As data source, I use the csv file called female_players_22.csv from the Fifa 20
 To run the code it is neccessery to download the csv file from Kaggle.
 
 ### Function Description: 
-1. player_type_dis(dataframe, specification): <br>
 - clean_data_to_purpose(data): <br>
      Deletes unneccesary columns and only keeps the european players <br>
      Args: <br>
