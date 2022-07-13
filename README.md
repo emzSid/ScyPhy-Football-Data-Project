@@ -65,14 +65,12 @@ The visualization (e.g. plot or images) of the functions output is done in the f
         Dataframe which is reduced to only players of one nation<br>
 
 - **get_top5(data, team, criteria):** <br>
-      Sorts the team by a criteria and displays the faces of the best 5 players of it<br>
-      
-      '''Args: <br>
+      Sorts the team by a criteria and displays the faces of the best 5 players of it<br> Args: <br>
         data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
         team: entry of the column 'nationality_name' (String)<br>
         criteria: any column name of the datframe with integers (String)<br>
       Results: <br>
-        Subplot with five images side by side displaying the players face'''
+        Subplot with five images side by side displaying the players face
         
 - **get_best_formation(data, specification):**<br>
      Maximizes the sum of the players overall rating for each possible formation and keeps the corresponding selected players as lineup <br>
