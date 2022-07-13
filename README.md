@@ -93,12 +93,12 @@ The visualization (e.g. plot or images) of the functions output is done in the f
 
 - **player_type_dis(data, specification):** <br>
     Displays a stacked barplot of the counts of each ranking type in the specified national teams<br>
-
+'''
     Args: <br>
         data: cleaned dataframe (female_players_22.csv from Kaggle)<br>
         specification: entry of the column 'nationality_name'<br>
     Results: <br>
-        Stacked barplot
+        Stacked barplot'''
 
 ### How to set up:
 To set up, you need to run the following:<br>
